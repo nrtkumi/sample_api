@@ -10,7 +10,7 @@ https://image-url.gif
 
 ## API
 
-##### GET /users
+### GET /users
 
 DBのユーザーをすべて返す
 
@@ -47,7 +47,7 @@ DBのユーザーをすべて返す
       } ...
     ]
 
-##### POST /users
+### POST /users
 
   ユーザーを作成
 
@@ -68,7 +68,7 @@ DBのユーザーをすべて返す
       "updated_at": "2016-10-25T16:02:59.767Z"
     }
 
-##### GET /users/:id
+### GET /users/:id
 ユーザーの個別の情報の取得(idによる識別)
 
   ex) /users/1
@@ -86,7 +86,7 @@ DBのユーザーをすべて返す
       "updated_at": "2016-10-25T14:43:15.550Z"
     }
 
-##### PATCH /users/:id
+### PATCH /users/:id
 ユーザー情報の更新
 
   POST /users と同様bodyにuser[name]=name
@@ -106,7 +106,7 @@ DBのユーザーをすべて返す
       "updated_at": "2016-10-25T16:31:05.856Z"
     }
 
-##### DELETE /users/:id
+### DELETE /users/:id
 ユーザーの削除
 
   ex) DELETE /users/1
