@@ -6,7 +6,7 @@
 
 ***baseURL:***
 
-https://image-url.gif
+https://rails-sample-api.herokuapp.com/
 
 ## API
 
@@ -14,8 +14,11 @@ https://image-url.gif
 
 DBのユーザーをすべて返す
 
+    $ curl https://rails-sample-api.herokuapp.com/users
+    curlを使ったときの実行コマンド
+
     GET /users HTTP1.1
-    Host: baseURL
+    Host: https://rails-sample-api.herokuapp.com/
 
     HTTP/1.1 200 OK
     Content-Type: application/json
@@ -55,6 +58,9 @@ DBのユーザーをすべて返す
 
   ex) user[name]=Takumi
 
+    $ curl https://rails-sample-api.herokuapp.com/users -X POST -d "user[name]=Takumi"
+    curlを使ったときの実行コマンド
+
     POST /users HTTP1.1
     Host: baseURL
 
@@ -72,6 +78,9 @@ DBのユーザーをすべて返す
 ユーザーの個別の情報の取得(idによる識別)
 
   ex) /users/1
+
+    $ curl https://rails-sample-api.herokuapp.com/users/1
+    curlを使ったときの実行コマンド
 
     GET /users HTTP1.1
     Host: baseURL
@@ -93,6 +102,10 @@ DBのユーザーをすべて返す
 
   ex) PATCH /users/1 user[name]=www
 
+
+    $ curl https://rails-sample-api.herokuapp.com/users -X PATCH -d "user[name]=www"
+    curlを使ったときの実行コマンド
+
     PATCH /users/1 HTTP1.1
     Host: baseURL
 
@@ -112,3 +125,6 @@ DBのユーザーをすべて返す
   ex) DELETE /users/1
 
   idが1のユーザーが削除される
+
+    $ curl https://rails-sample-api.herokuapp.com/users/1 -X DELETE
+    curlを使ったときの実行コマンド
