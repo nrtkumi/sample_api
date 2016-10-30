@@ -4,9 +4,9 @@
 
   [curl](http://d.hatena.ne.jp/thata/20100207/1265554365)とか[postman](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=ja)で試してみてください
 
-##### POSTメソッドのリクエストのパラメータは全て埋めてリクエストしてください。NULLを認めない制約を追加しました
+##### POSTメソッドのリクエストのパラメータは全て埋めてリクエストしてください。NULLを認めない制約を追加しました
 
-##### nameパラメータはuserとschoolとも重複はしないように制約を追加しました
+##### nameパラメータはuserとschoolどちらも重複はしないように制約を追加しました
 
 ## API
 
