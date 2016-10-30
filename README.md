@@ -103,7 +103,7 @@ DBのユーザーをすべて返す
   ex) PATCH /users/1 user[name]=www
 
 
-    $ curl https://rails-sample-api.herokuapp.com/users -X PATCH -d "user[name]=www"
+    $ curl https://rails-sample-api.herokuapp.com/users/1 -X PATCH -d "user[name]=www"
     curlを使ったときの実行コマンド
 
     PATCH /users/1 HTTP1.1
