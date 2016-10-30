@@ -209,7 +209,7 @@ DBのユーザーをすべて返す
 
 ### GET /schools/:id
 
-登録された学校を取得(idによって個別に)
+登録された学校を取得(idによる)
 
     $ curl https://rails-sample-api.herokuapp.com/schools/1
     curlを使ったときの実行コマンド
