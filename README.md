@@ -189,9 +189,8 @@ DBのユーザーをすべて返す
       }
     ]
 
-
-  ### POST /schools
-  学校の追加
+### POST /schools
+学校の追加
 
   ex) school[name]=東大 school[member]=1000 school[place]=Tokyo school[description]=すごい
 
@@ -208,9 +207,9 @@ DBのユーザーをすべて返す
       "updated_at": "2016-10-30T06:18:33.984Z"
     }
 
-  ### GET /schools/:id
+### GET /schools/:id
 
-  登録された学校を取得(idによって個別に)
+登録された学校を取得(idによって個別に)
 
     $ curl https://rails-sample-api.herokuapp.com/schools/1
     curlを使ったときの実行コマンド
